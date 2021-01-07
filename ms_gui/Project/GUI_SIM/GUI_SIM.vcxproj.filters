@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{38f93cc6-57f2-4518-a934-c4d057592345}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Simulation">
+      <UniqueIdentifier>{622e622f-3534-4244-b1fd-03e83bde0f76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConvertColor">
+      <UniqueIdentifier>{0615cb42-ccd4-4760-856b-d5449749e73d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PIC_Graphics">
+      <UniqueIdentifier>{9352a3b9-c447-444b-91a9-e23f4f5ab26e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Demo">
+      <UniqueIdentifier>{06a75877-258e-4f88-87e6-04294c8124f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6e511e8b-f6f6-46b5-9b97-7f1b118c2545}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1ecfa746-567e-4fb9-9355-3292aaff0590}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Branding.c">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\emWin.c">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GUI_X_SIM.c">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LCD_X_SIM.c">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LCDInfo0.c">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LCDSIM.c">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Main.c">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SIM_X.c">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP111.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP222.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP233.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP323.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP332.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP444.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP555.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP565.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP8666.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDPM233.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDPM323.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDPM332.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDPM555.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDPM565.c">
+      <Filter>Source Files\ConvertColor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\Button.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\CheckBox.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\CustomControlDemo.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\DisplayL.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\EditBox.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\GOL.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\GOLFontDefault.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\GroupBox.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\ListBox.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\Meter.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\Picture.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\Primitive.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\ProgressBar.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\RadioButton.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\RoundDial.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\Slider.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\StaticText.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\Template.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PIC_Graphics\Window.c">
+      <Filter>Source Files\PIC_Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demo\Beep.c">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demo\Fonts.c">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demo\MainDemo.c">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demo\Pictures.c">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demo\rtcc.c">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demo\SideButtons.c">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demo\TouchScreen.c">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Resource\emWin.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

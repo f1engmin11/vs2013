@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{073D232C-C0AB-483E-B87C-DA7EC87AAE01}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\\Source;..\..\Resource;..\..\Simulation;..\..\PIC_Graphics;..\..\Demo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\GUI_SIM.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\GUI_SIM.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\GUI_SIM.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\GUI_SIM.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\GUI_SIM.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\GUI_SIM.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\GUI_SIM.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\GUI_SIM.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Branding.c" />
+    <ClCompile Include="..\..\Source\emWin.c" />
+    <ClCompile Include="..\..\Source\GUI_X_SIM.c" />
+    <ClCompile Include="..\..\Source\LCD_X_SIM.c" />
+    <ClCompile Include="..\..\Source\LCDInfo0.c" />
+    <ClCompile Include="..\..\Source\LCDSIM.c" />
+    <ClCompile Include="..\..\Source\Main.c" />
+    <ClCompile Include="..\..\Source\SIM_X.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP111.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP222.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP233.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP323.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP332.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP444.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP555.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP565.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDP8666.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDPM233.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDPM323.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDPM332.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDPM555.c" />
+    <ClCompile Include="..\..\GUI\ConvertColor\LCDPM565.c" />
+    <ClCompile Include="..\..\PIC_Graphics\Button.c" />
+    <ClCompile Include="..\..\PIC_Graphics\CheckBox.c" />
+    <ClCompile Include="..\..\PIC_Graphics\CustomControlDemo.c" />
+    <ClCompile Include="..\..\PIC_Graphics\DisplayL.c" />
+    <ClCompile Include="..\..\PIC_Graphics\EditBox.c" />
+    <ClCompile Include="..\..\PIC_Graphics\GOL.c" />
+    <ClCompile Include="..\..\PIC_Graphics\GOLFontDefault.c" />
+    <ClCompile Include="..\..\PIC_Graphics\GroupBox.c" />
+    <ClCompile Include="..\..\PIC_Graphics\ListBox.c" />
+    <ClCompile Include="..\..\PIC_Graphics\Meter.c" />
+    <ClCompile Include="..\..\PIC_Graphics\Picture.c" />
+    <ClCompile Include="..\..\PIC_Graphics\Primitive.c" />
+    <ClCompile Include="..\..\PIC_Graphics\ProgressBar.c" />
+    <ClCompile Include="..\..\PIC_Graphics\RadioButton.c" />
+    <ClCompile Include="..\..\PIC_Graphics\RoundDial.c" />
+    <ClCompile Include="..\..\PIC_Graphics\Slider.c" />
+    <ClCompile Include="..\..\PIC_Graphics\StaticText.c" />
+    <ClCompile Include="..\..\PIC_Graphics\Template.c" />
+    <ClCompile Include="..\..\PIC_Graphics\Window.c" />
+    <ClCompile Include="..\..\Demo\Beep.c" />
+    <ClCompile Include="..\..\Demo\Fonts.c" />
+    <ClCompile Include="..\..\Demo\MainDemo.c" />
+    <ClCompile Include="..\..\Demo\Pictures.c" />
+    <ClCompile Include="..\..\Demo\rtcc.c" />
+    <ClCompile Include="..\..\Demo\SideButtons.c" />
+    <ClCompile Include="..\..\Demo\TouchScreen.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Resource\emWin.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\Users\ghost\Desktop\ms\Resource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\Users\ghost\Desktop\ms\Resource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

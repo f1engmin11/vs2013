@@ -1,0 +1,265 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EMWIN               ICON    DISCARDABLE     "emWin.ICO"
+IDI_SMALL               ICON    DISCARDABLE     "SMALL.ICO"
+IDI_ICON1               ICON    DISCARDABLE     "Icon_1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_EMWIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit\tALT-F4",               IDM_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "LCD",                         IDM_NEWLCD
+        MENUITEM "Colors",                      IDM_NEWCOLORS
+        MENUITEM "Log",                         IDM_LOG
+        MENUITEM "&Always on top",              IDM_ALWAYSTOP
+        MENUITEM "MotionLog",                   IDM_MotionLog
+        MENUITEM "MainTaskLog",                 IDM_MainTaskLog
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+IDC_POPEMWIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Pause Application\tF4",       IDM_PAUSEAPP
+        MENUITEM "Resume Application\tF5",      IDM_RESUMEAPP
+        MENUITEM SEPARATOR
+        MENUITEM "Copy to clipboard",           IDM_COPYCLIP
+        MENUITEM "&About ...",                  ID_ABOUT_APPC
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tALT-F4",               IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDM_ABOUT ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+    VK_F3,          32774,                  VIRTKEY, NOINVERT
+    VK_F4,          32775,                  VIRTKEY, NOINVERT
+    VK_F5,          32776,                  VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 9, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ICON1,IDI_ICON1,7,7,20,20
+    DEFPUSHBUTTON   "OK",1,178,7,32,14,WS_GROUP
+    LTEXT           "Application",ID_ABOUT_APPC,40,9,119,8,SS_NOPREFIX
+    LTEXT           "Version",ID_ABOUT_VERSION,40,19,119,8
+    GROUPBOX        "",-1,7,33,203,58
+    CTEXT           "Copyright",ID_ABOUT_COPYRIGHT,14,44,190,41
+END
+
+IDD_LOG DIALOG DISCARDABLE  0, 0, 282, 117
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "LOG¼ÇÂ¼"
+FONT 9, "ËÎÌå"
+BEGIN
+    EDITTEXT        IDC_EDITLOG,8,9,260,96,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_MotionLog DIALOG DISCARDABLE  0, 0, 212, 114
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "Motion Log"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_MotionLog,7,7,198,100,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_MainTaskLog DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "MainTask Log"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_MainTaskLog,7,7,173,80,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_HALSHMDisp DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "HALSHMDisp"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_MotionDisp,7,7,173,80,ES_MULTILINE | ES_WANTRETURN
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP  DISCARDABLE     "Micrium.bmp"
+IDB_DEVICE2             BITMAP  DISCARDABLE     "Device1.bmp"
+IDB_DEVICE              BITMAP  DISCARDABLE     "Device.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 281
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_MotionLog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_MainTaskLog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_HALSHMDisp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "emWin...ucGUI-View"
+    IDS_HELLO               "emWin"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_EMWIN               "ucGUI--View"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LOG                  "¼ÇÂ¼LOG"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

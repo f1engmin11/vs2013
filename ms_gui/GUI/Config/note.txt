@@ -1,0 +1,3 @@
+1.本目录未用，原有的3个配置文件GUIConf.h GUITouchConf.h LCDConf.h均已转移到GUI/include目录
+2.工程中也没有包含该目录，工程中看到的这3个文件均来自GUI/include目录
+
