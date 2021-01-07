@@ -35,7 +35,7 @@ int main(void)
 	EERLOGO eerlogo;
 	unsigned short eerlogo_len;
 
-	unsigned char a, b, c;
+	unsigned char a = 0, b = 0, c = 0;
 	a = 200;
 	b = 200;
 	c = a + b;
